@@ -1,0 +1,5 @@
+Python Commands
+
+
+To run python, simply type in "python" in termninal and hit enter
+exit() -> exits python 

@@ -1,0 +1,57 @@
+Terminal Commands
+
+
+cd [directory name] -> changes your directory
+cd [~] -> go home; as if you just opened terminal from the beginning
+clear -> clears everything as if you just opened terminal from the beginning
+pwd -> print working directory; tells you the directory you are currently working in
+hostname -> my computer's network name
+mkdir [folder name] -> creates a folder or new directory
+rmdir [folder name] -> removes folder or directory
+touch [file name e.g test.txt] -> creates a file
+touch .[file name e.g test.txt] -> the . in front of the name of the file makes it a hidden file
+mate [. or name of file or folder] -> open that item in textmate
+ls -> lists the contents of the folder or directory
+ls -a -> lists all files even hidden ones
+rm -rf [file name] -> removes files; you can also drag and drop the file instead of writing it
+python [name of python file] -> run python file; you can also drag and drop the file instead of writing it
+cp -> copy a file or directory
+mv -> move a file or directory
+cat -> prints a whole file in terminal
+less -> scrolls through a file once printed; it's a much better way to inspect large files on the command line. You’ll get a screen-full of text at a time, but no more. You can move a line up or a line down with the k and j respectively, and move a window up or down with b and f. You can search for a pattern by typing /pattern. When you’re done, hit q to exit the less viewer.
+find -> find files
+grep -> finds things inside files
+find * | grep [word e.g pikachu] -> finds files with the keyword; in this case with the word pikachu
+cat * | grep [word e.g pikachu] -> finds keyword in the file; in this case it will find every instance of the word pikachu in the file
+man -> read a manual page on a command you're curious about. Simply type man followed by the command you’re curious about.
+apropos -> finds what man page is appropriate
+en -> look at your environment
+export -> export/set a new environment variable
+echo -> print some arguments
+xargs -> execute arguments
+history -> lists all the commands entered
+exit -> exits terminal
+
+REPAIR DISK PERMISSONS
+sudo /usr/libexec/repair_packages --verify --standard-pkgs /
+sudo /usr/libexec/repair_packages --repair --standard-pkgs --volume /
+
+DELETE STUBBORN FILES
+sudo rm -rf ~/.Trash
+sudo rm -rf /Volumes/*/.Trashes
+
+UPDATING HOMEBREW
+brew update && brew update
+
+RESTART MAC
+sudo shutdown -r now
+
+SHUTDOWN MAC
+sudo shutdown -h now
+NOTE: -h stands for halt
+To shutdown in 5 minutes, insert the time in military time in place of "now"
+EX: Currently it's 5:45pm, to shutdown in 5 minutes -> sudo shutdown -h 1750
+NOTE: No need to type the colon in 17:50, just type 1750
+
+ABORT SHUTDOWN
+sudo shutdown -a
