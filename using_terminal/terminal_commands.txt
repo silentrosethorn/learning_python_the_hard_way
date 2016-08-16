@@ -21,7 +21,7 @@ ls -> lists the contents of the folder or directory
 ls -a -> lists all files even hidden ones
 rm -rf [file name] -> removes files; you can also drag and drop the file instead of writing it
 python [name of python file] -> run python file; you can also drag and drop the file instead of writing it
-cp -> copy a file or directory&
+cp -> copy a file or directory
 mv -> move a file or directory
 cat -> prints a whole file in terminal
 less -> scrolls through a file once printed; it's a much better way to inspect large files on the command line. You’ll get a screen-full of text at a time, but no more. You can move a line up or a line down with the k and j respectively, and move a window up or down with b and f. You can search for a pattern by typing /pattern. When you’re done, hit q to exit the less viewer.
