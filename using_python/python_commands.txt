@@ -2,4 +2,5 @@ Python Commands
 
 
 To run python, simply type in "python" in termninal and hit enter
-exit() -> exits python 
+exit() -> exits python
+Option + arrow keys -> lets you skip around your code quickly
